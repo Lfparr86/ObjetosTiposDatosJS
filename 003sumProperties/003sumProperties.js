@@ -24,8 +24,6 @@ let salaries = {
 
   let resultado = function sumarSalario() {
 
- 
-    
         for(let key in salaries){
             sum = sum + salaries[key];
          }

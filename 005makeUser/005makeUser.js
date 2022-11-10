@@ -21,3 +21,6 @@ function makeUser() {
   }
   let user = makeUser();
   alert( user.ref.name ); // ¿Cuál es el resultado?
+  /*
+  En este caso no esta devolviendo nada
+  */
