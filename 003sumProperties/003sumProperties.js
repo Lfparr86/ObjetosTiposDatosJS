@@ -22,19 +22,17 @@ let salaries = {
 
   let sum =0;
 
-  function sumarSalario() {
+  let resultado = function sumarSalario() {
 
-    if (salaries == null) {
-
-        alert(sum);
-      }else{
+ 
     
-        for(let variable in salaries){
-            sum = sum + salaries[variable];
+        for(let key in salaries){
+            sum = sum + salaries[key];
          }
+         return(sum);
     }
-  }
+  
 
+alert(resultado())
 
-alert(sumarSalario());
 
