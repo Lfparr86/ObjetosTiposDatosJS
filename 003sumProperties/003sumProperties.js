@@ -15,22 +15,26 @@ resultado será 0.
 let salaries = {
     Harry: 100,
     Ron: 160,
-    Hermione: 130
+   Hermione: 130
   }
 
-  let sum;
-  for(let variable in salaries){
-     sum = sum + salaries[variable];
-  }
+// let sum = salaries.Harry + salaries.Ron + salaries.Hermione;
 
- // if(Object.key(salaries).length ===0){
+  let sum =0;
+
+  function sumarSalario() {
+
+    if (salaries == null) {
+
+        alert(sum);
+      }else{
     
-  
+        for(let variable in salaries){
+            sum = sum + salaries[variable];
+         }
+    }
+  }
 
-   // let sum = salaries.Harry + salaries.Ron + salaries.Hermione;
-    alert(sum);
-  
 
+alert(sumarSalario());
 
-
-//alert(sum);
