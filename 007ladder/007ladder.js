@@ -31,15 +31,21 @@ Tal enfoque es ampliamente usado entre las librerías JavaScript.
 let ladder = {
     step: 0,
     up() {
-      return this.step++;
+      this.resultado = this.step++;
+      return this.resultado;
     },
     down() {
-      this.step--;
+        this.resultado = this.step--;
+        return this.resultado;
     },
     showStep: function() { // muestra el peldaño actual
-      alert( this.step );
+      this.resultado = alert( this.step );
+      return this.resultado;
     }
   };
 
- alert( ladder.up());//undefined? Recordar poner return
- alert( ladder.up());//undefined?
+// ladder.up();//undefined? Recordar poner return
+// ladder.up();
+// ladder.down();
+// ladder.showStep();//undefined? ya tiene un alert
+ ladder.up().up().down().showStep().down().showStep();//Pendiente de ver
