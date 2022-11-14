@@ -12,3 +12,6 @@ Qué piensas: ¿funcionará? ¿Qué mostrará? ¿Por qué?
 let str = "Peter";
 str.test = 5;
 alert(str.test);
+
+
+
