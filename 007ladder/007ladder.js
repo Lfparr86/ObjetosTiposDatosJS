@@ -30,22 +30,24 @@ Tal enfoque es ampliamente usado entre las librerías JavaScript.
 
 let ladder = {
     step: 0,
+    resultado:0,
     up() {
-      this.resultado = this.step++;
-      return this.resultado;
+      this.step++;
+      return this;
     },
     down() {
-        this.resultado = this.step--;
-        return this.resultado;
+        this.step--;
+        return this;
     },
     showStep: function() { // muestra el peldaño actual
-      this.resultado = alert( this.step );
-      return this.resultado;
+       alert( this.step );
+      return this;
     }
   };
 
-// ladder.up();//undefined? Recordar poner return
-// ladder.up();
-// ladder.down();
-// ladder.showStep();//undefined? ya tiene un alert
+//ladder.up();//undefined? Recordar poner return
+//ladder.up();
+//ladder.up();
+//ladder.down();
+//ladder.showStep();//undefined? ya tiene un alert
  ladder.up().up().down().showStep().down().showStep();//Pendiente de ver
